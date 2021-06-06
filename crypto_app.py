@@ -60,4 +60,4 @@ if selected_crypto:
 
     # Show
     # fig.show()
-    st.plotly(fig)
+    st.plotly_chart(fig)
