@@ -59,4 +59,5 @@ if selected_crypto:
             'yanchor': 'top'})
 
     # Show
-    fig.show()
+    # fig.show()
+    st.plotly(fig)
