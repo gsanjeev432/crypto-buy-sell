@@ -15,7 +15,7 @@ selected_crypto = st.selectbox('Select Crypto', crypto_list)
 if selected_crypto:
     crypto = crypto_mapping[selected_crypto]
     # Importing market data
-    data = yf.download(tickers=crypto, period='10d', interval='60m')
+    data = yf.download(tickers=crypto, period='8d', interval='90m')
 
     # Adding Moving average calculated field
     data['MA5'] = data['Close'].rolling(5).mean()
