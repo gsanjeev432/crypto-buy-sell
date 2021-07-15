@@ -5,11 +5,11 @@ import plotly.graph_objs as go
 import streamlit as st
 
 st.title("Crypto App Buy and Sell Decision")
-crypto_mapping = {"DOGE": "DOGE-INR", "ETHEREUM": "ETH-INR", "BITCOIN": "BTC-INR", "KUSAMA": "KSM-INR", "BINANCE": "BNB-INR", "LITECOIN": "LTC-INR", "FILECOIN": "FIL-INR",
-                  "SOLANA": "SOL1-INR", "BITTORRENT": "BTT1-INR", "TRON": "TRX-INR", "RIPPLE": "XRP-INR", "VECHAIN": "VET-INR", "MATIC": "MATIC-INR", "CARDANO": "ADA-INR", "EOS": "EOS-INR"}
+crypto_mapping = {"DOGE": "DOGE-INR", "ETHEREUM": "ETH-INR", "BITCOIN": "BTC-INR", "KUSAMA": "KSM-INR", "BINANCE": "BNB-INR", "LITECOIN": "LTC-INR", "FILECOIN": "FIL-INR", "SOLANA": "SOL1-INR", "BITTORRENT": "BTT1-INR", "TRON": "TRX-INR", "RIPPLE": "XRP-INR", "VECHAIN": "VET-INR",
+                  "MATIC": "MATIC-INR", "CARDANO": "ADA-INR", "EOS": "EOS-INR", "YEARN.FINANCE": "YFI-INR", "MAKER": "MKR-INR", "COMPOUND": "COMP-INR", "POLKADOT": "DOT1-INR", "SYNTHETIX": "SNX-INR", "AVALANCHE": "AVAX-INR", "DECENTRALAND": "MANA-INR", "SIACOIN": "SC-INR", "ZILIQA": "ZIL-INR"}
 
-crypto_list = [None, "DOGE", "ETHEREUM", "BITCOIN", "KUSAMA", "BINANCE", "LITECOIN", "FILECOIN",
-               "SOLANA", "BITTORRENT", "TRON", "RIPPLE", "VECHAIN", "MATIC", "CARDANO", "EOS"]
+crypto_list = [None, "DOGE", "ETHEREUM", "BITCOIN", "KUSAMA", "BINANCE", "LITECOIN", "FILECOIN", "SOLANA", "BITTORRENT", "TRON", "RIPPLE", "VECHAIN",
+               "MATIC", "CARDANO", "EOS", "YEARN.FINANCE", "MAKER", "COMPOUND", "POLKADOT", "SYNTHETIX", "AVALANCHE", "DECENTRALAND", "SIACOIN", "ZILIQA"]
 selected_crypto = st.selectbox('Select Crypto', crypto_list)
 
 if selected_crypto:
